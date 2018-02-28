@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+
+<!--navbar-->
+
+		<nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">IIT Delhi</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Academis</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clubs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">DEV Club</a></li>
+            <li><a href="#">iGEM</a></li>
+            <li><a href="#">Robotics</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Dance</a></li>
+            <li><a href="#">Drama</a></li>
+          </ul>
+        </li>
+      </ul>
+        <ul class="nav navbar-nav navbar-left">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          		<ul class="dropdown-submenu">
+            		<li><a href="#">Action</a></li>
+            		<li><a href="#">Another action</a></li>
+            	</ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="navbar-form navbar-right">
+        <div class="info">
+          <a href="#scroll_top_address"><button id = "topButton" class="animated bounce infinite"> Click To go to the Top <i class="fas fa-arrow-up"></i></button></a>
+        </div>
+      </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+	<div   id = "scroll_top_address" class="row" style="margin-top: 50px;">
+	<div class="alert" role="alert" style="padding:0px;background-color: #A9ECFC  ;margin-bottom: 0px;">
+  <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+  <strong style="padding-left: 20px;"><i class="fa fa-warning"></i>Most Imp Info</strong> <marquee><p style="font-family: Impact; font-size: 18pt">3rd  April will be considered as a working Saturdday</p></marquee>
+</div>
+	</div>
+<!-- 	Most important information by the Intsitute...
+ -->	
+
+
+	<br><br>
+
+	<div class = "container" id="main"  >
+		<div>
+				<div id = "quote">
+				<h1>IIT Delhi</h1>
+				<p>Get all you want About your campus just on this place</p>
+				<a class ="scroll" href="#menu"><button class="btn btn-success"> Learn More !</button></a>
+				</div>
+		</div>
+	
+	</div>
+	<div  id = "menu" >
+			<div class = "container">
+        <div class="col-lg-4">
+          <a href="#clubScroll" id="sclubs"><button  id ="clubs" class="btn btn-info btn-lg" data-toggle="tooltip" title="Click fast! you have come to the write place">Clubs</button></a>
+        </div> 
+      <div class="col-lg-4">
+        <a href="#departmentScroll" id="sdepartments" data-toggle="tooltip" title="Please click on clubs instead...."><button  id ="departments" class="btn btn-info btn-lg">Departments</button>
+        </a>
+      </div>
+    <div class="col-lg-4">
+
+        <a href="#studentbodyScroll" id="sstudentbodies" data-toggle="tooltip" title="Please Click on Clubs... studentbodies don't know coding so their information is not available"><button  id ="studentbodies" class="btn btn-info btn-lg">Student Bodies</button>
+				</a>
+			</div>
+	</div>
+</div>
+
+            <br id="clubScroll">
+            <h1 align="center">Our Elite Clubs</h1>
+            <p align="center">Click on any of them</p>
+            <div id="clubscontainer" class="container">  
+              <div class="row" style="margin-top: 50px;">
+
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#devClubScroll"><img class = "img-circle" src="devcl.png" width="50%"></a>
+                  </div>
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#musicClubScroll"><img class = "img-circle" src="musiccl.jpg" width="50%"></a>
+                  </div>
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#danceClubScroll"><img class = "img-circle" src="dancecl.png" width="50%"></a>
+                  </div>
+                	</div>
+              </div>
+            </div>
+
+                  <hr>
+<!--                   Dev Club Starts
+ -->                  <br id="devClubScroll"><br><br><br>
+
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-lg-8" >
+                				<div class="content" id="devClubMain">
+                        			<h1>Dev.Club</h1>
+                        			<h3>Software Development Club, IIT Delhi
+                            		</h3>
+                            		<h3>
+                                	<div class="separator-container">
+                                    	<div class="separator line-separator">∎</div>
+                                	</div>
+                                	</h3>
+                                	<h2>We <span class="verb"> <span class="make">make</span></span><span class="typed-cursor">|</span> things</h2>
+                    			</div>
+                			</div>
+                			<div class="col-lg-4">
+
+                        <h1> </h1>   
+                        <div class="holder">
+  <ul id="ticker01">
+              <li><span>10/10/2018</span><a href="#">The last date for submitting the assignment is 10 April 2018</a></li>
+              <li><span>10/10/2018</span><a href="#">Everyone should Focus on learning</a></li>
+              <li><span>10/10/2018</span><a href="#">Submit your assignment and be in touch</a></li>
+  </ul>
+</div>
+<h3>Contact us   <a href="#"><i class="fas fa-phone-volume"></i></a></h3>
+<h3> <a href="#"><u>Our Website</u></a></h3>
+                      </div>
+                		</div>
+                	</div>
+
+
+<!--                   Dev club Ends
+ -->
+
+                   <hr>
+<!--                    Music Club Starts Here
+
+ -->              <br id="musicClubScroll"><br><br><br>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8" >
+                        <div class="content" id="musicClubMain">
+                              <h1>Music Club</h1>
+                              <h3>.Excercise your vocal chords.
+                                </h3>
+                                <h3>
+                                  <div class="separator-container">
+                                      <div class="separator line-separator">∎</div>
+                                  </div>
+                                  </h3>
+                                  <h2>We <span class="verb"> <span class="make">CREATE</span></span><span class="typed-cursor">|</span> Music</h2>
+                          </div>
+                      </div>                <div class="col-lg-4">
+
+                        <h1> </h1>   
+                        <div class="holder">
+  <ul id="ticker01">
+              <li><span>10/10/2018</span><a href="#">Please someone come to Music Club</a></li>
+              <li><span>10/10/2018</span><a href="#">We are the best in the universe</a></li>
+              <li><span>10/10/2018</span><a href="#">Auditions will be takin in LH 121</a></li>
+  </ul>
+</div>
+<h3>Contact us   <a href="#"><i class="fas fa-phone-volume"></i></a></h3>
+<h3> <a href="#"><u>Our Website</u></a></h3>
+                    </div>
+                  </div>
+<!--                   Music Club ends here
+ -->
+                  <hr>
+<!--                    Dance Club Starts Here
+
+ -->              <br id="danceClubScroll"><br><br><br>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8" >
+                        <div class="content" id="danceClubMain">
+                              <h1>Dance.Club</h1>
+                              <h3>Move your body.Its good for health
+                                </h3>
+                                <h3>
+                                  <div class="separator-container">
+                                      <div class="separator line-separator">∎</div>
+                                  </div>
+                                  </h3>
+                                  <h2>We <span class="verb"> <span class="make">DANCE</span></span><span class="typed-cursor">|</span>on songs. :)</h2>
+                          </div>
+                      </div>                <div class="col-lg-4">
+
+                        <h1> </h1>   
+                        <div class="holder">
+  <ul id="ticker01">
+              <li><span>10/10/2018</span><a href="#">Music and Dance are the best thing in the world</a></li>
+              <li><span>10/10/2018</span><a href="#">So come to our club and never go in dev club</a></li>
+              <li><span>10/10/2018</span><a href="#">Submit your assignment and be in touch</a></li>
+  </ul>
+</div>
+
+<h3>Contact us   <a href="#"><i class="fas fa-phone-volume"></i></a></h3>
+<h3> <a href="#"><u>Our Website</u></a></h3>
+                    </div>
+                  </div>
+<!--                   Dance Club ends here
+
+  <hr
+ -->
+
+            <br id="departmentScroll">
+            <h1 align="center">Our Elite Departments</h1>
+            <p align="center">Click on any of them</p>
+            <div id="clubscontainer" class="container">  
+              <div class="row" style="margin-top: 50px;">
+
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#devClubScroll"><img class = "img-circle" src="csdl.jpg" width="50%"></a>
+                  </div>
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#musicClubScroll"><img class = "img-circle" src="electricaldl.png" width="50%"></a>
+                  </div>
+                  <div class ="col-lg-4" id = "devClub">
+                    <a href="#danceClubScroll"><img class = "img-circle" src="chemicaldl.jpg" width="50%"></a>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+                  <hr>
+  
+
+  <h1>Similarly for all departments like in Clubs</h1>
+
+</body>
+</html>
